@@ -1,3 +1,4 @@
+//Amritha Susan Jacob C0753813
 import java.util.Scanner;
 
 public class ScreamCode {
@@ -10,16 +11,29 @@ public class ScreamCode {
       int days=num*7;
       int numaff=1;
       int count=1;
-      for(int i=1;i<days;i++)
+      int i=1;
+      while(i<=days)
       {
+         while(i<8)
+          {
     	  numaff=numaff+4;
     	  count++;
     	  if((count%7)==0)
     	  {
     		  System.out.println("End of the week total :"+numaff);  
     	  }
+    	  i++;
+          }
+        numaff=numaff+8;
+        
+        count++;
+  	    if((count%7)==0)
+  	     {
+  		  System.out.println("End of the week total :"+numaff);  
+  	     }
+  	    i++;
       }
-      System.out.println("End of week "+num+" = "+numaff);
+      
       obj.close();
     		  
 	}
